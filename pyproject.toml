@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "database-to-ymarkdown"
+name = "db2md"
 version = "0.1.0"
 description = ""
 authors = ["György Kiss <gyorgy@duck.com>"]
@@ -9,6 +9,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1.7"
+pyyaml = "^6.0.1"
+
+[tool.poetry.scripts]
+db2md = 'db2md.cli:main'
 
 
 [build-system]
