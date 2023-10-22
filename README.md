@@ -1,4 +1,4 @@
-# Database to Markdown
+# SQLite table to Obsidian note
 
 This quick and dirty tool converts SQLite database tables to Obsidian Markdwon files.
 
