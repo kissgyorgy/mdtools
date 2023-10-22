@@ -6,7 +6,7 @@ from pathlib import Path
 import yaml
 
 
-def convert_table_to_yaml(
+def convert_table(
     database_file,
     table_name,
     body_columns,
