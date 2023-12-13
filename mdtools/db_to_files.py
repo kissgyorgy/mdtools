@@ -66,7 +66,6 @@ def create_md(columns, body_columns, single_val_columns, bool_columns, row, file
         if column in exclude_columns:
             continue
         value = bool(value) if column in bool_columns else value
-        # breakpoint()
         value = convert_list(value, single_val=column in single_val_columns)
         yaml_data[column] = value
 

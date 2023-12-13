@@ -1,27 +1,17 @@
-# SQLite table to Obsidian note
+# mdtools
 
-This quick and dirty tool converts SQLite database tables to Obsidian Markdwon files.
-
-It introspects the database table and converts the rows to properties in front matter.
-
-The content of the Markdown file can be parametrized.
+Tools for editing Markdown files with common problems, mainly for use with
+[Obsidian](https://obsidian.md/).
 
 ## Usage
+
 ```
-Usage: db2obsidian [OPTIONS] DATABASE TABLE
+Usage: mdtools [OPTIONS] COMMAND [ARGS]...
 
 Options:
-  --body-column TEXT        This column will be the content of the Markdown
-                            file. Can be specified multiple times, they will
-                            be concatenated with newlines.
-  --single-val-column TEXT  Convert a list to a single value (takes first
-                            element).
-  --bool-column TEXT        Converts an int column to a boolean value. Values
-                            are not checked.
-  --help                    Show this message and exit.
+  --help  Show this message and exit.
+
+Commands:
+  clean        Clean up text from unwanted strings.
+  db2obsidian  Convert an SQLite database table to a set of Markdown files.
 ```
-
-## Development
-
-I'm not interested developing this tool myself, because it solved all my needs, but 
-I accept Pull Requests if you want to improve it.
