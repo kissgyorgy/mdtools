@@ -3,7 +3,7 @@ import re
 
 def remove_youtube_title(content):
     # maybe we need to be more precise about the links
-    return content.replace(" - YouTube](", "](")
+    return content.replace(" - YouTube", "")
 
 
 def remove_link_from_title(content):
